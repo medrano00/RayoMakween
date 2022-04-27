@@ -24,6 +24,11 @@ body {
 .subnav {
   float: left;
   overflow: hidden;
+
+}
+.subnav1 {
+  float: right;
+  overflow: hidden;
 }
 
 .subnav .subnavbtn {
@@ -37,11 +42,33 @@ body {
   margin: 0;
 }
 
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: red;
+.subnav1 .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
+.navbar  a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+.navbar  a:hover, .subnav1:hover .subnavbtn {
+  background-color: red;
+}
 .subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(61, 44, 44);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content1 {
   display: none;
   position: absolute;
   left: 0;
@@ -55,13 +82,23 @@ body {
   color: white;
   text-decoration: none;
 }
-
+.subnav-content1 a {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
 .subnav-content a:hover {
   background-color: #eee;
   color: black;
 }
-
+.subnav-content1 a:hover {
+  background-color: #eee;
+  color: black;
+}
 .subnav:hover .subnav-content {
+  display: block;
+}
+.subnav1:hover .subnav-content1{
   display: block;
 }
 </style>
@@ -70,7 +107,7 @@ body {
 <div class="navbar">
   <a>Inicio</a>
   <div class="subnav">
-    <button class="subnavbtn">Sobre Nosotros <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Sobre Nosotros</button>
     <div class="subnav-content">
       <a>Taller</a>
       <a>Mecanicos</a>
@@ -78,24 +115,19 @@ body {
     </div>
   </div> 
   <div class="subnav">
-    <button class="subnavbtn">Servicios <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Contacto</button>
     <div class="subnav-content">
-      <a>Bring</a>
-      <a>Deliver</a>
-      <a>Package</a>
-      <a>Express</a>
+      <a>Formulario</a>
+      <a>Chat en linea</a>
     </div>
   </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a>Link 1</a>
-      <a>Link 2</a>
-      <a>Link 3</a>
-      <a>Link 4</a>
+  <div class="subnav1">
+    <button class="subnavbtn">Inicio de sesion</button>
+    <div class="subnav-content1">
+      <a>Cliente</a>
+      <a>Empresa</a>
     </div>
   </div>
-  <a href="#contact">Contact</a>
 </div>
 
 <div style="padding:0 16px">
