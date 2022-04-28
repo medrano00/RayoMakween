@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(163, 116, 116); 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+
+}
+.subnav1 {
+  float: right;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnav1 .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar  a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+.navbar  a:hover, .subnav1:hover .subnavbtn {
+  background-color: red;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(61, 44, 44);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content1 {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(61, 44, 44);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+.subnav-content1 a {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+.subnav-content1 a:hover {
+  background-color: #eee;
+  color: black;
+}
+.subnav:hover .subnav-content {
+  display: block;
+}
+.subnav1:hover .subnav-content1{
+  display: block;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a>Inicio</a>
+  <div class="subnav">
+    <button class="subnavbtn">Sobre Nosotros</button>
+    <div class="subnav-content">
+      <a>Taller</a>
+      <a>Mecanicos</a>
+      <a>Nuestros trabajos</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Contacto</button>
+    <div class="subnav-content">
+      <a>Formulario</a>
+      <a>Chat en linea</a>
+    </div>
+  </div> 
+  <div class="subnav1">
+    <button class="subnavbtn">Inicio de sesion</button>
+    <div class="subnav-content1">
+      <a>Cliente</a>
+      <a>Empresa</a>
+    </div>
+  </div>
+</div>
+
+<div style="padding:0 16px">
+/////para el log in//////
+</div>
+
+</body>
+</html>
